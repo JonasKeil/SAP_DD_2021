@@ -1,0 +1,30 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="calculatorproject.controller.View1" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages><Page id="page" title="{i18n>title}">
+					<content>
+					    <HBox width="100%" id="hbox0" alignItems="Center">
+					        <items>
+					            <Input xmlns="sap.m" value="" id="input0"/>
+                                <Label text="+" width="100%" id="operation"/>
+					            <Input xmlns="sap.m" value="" id="input1"/>
+					            <Label text="=" width="100%" id="label1"/>
+					            <Label text="0" width="100%" id="result"/>
+					        </items>
+					    </HBox>
+					    <HBox width="100%" id="hbox0_1631717254079">
+					        <items>
+					            <Button xmlns="sap.m" text="+" id="plus" press="onPlusPress"/>
+					            <Button xmlns="sap.m" text="-" id="minus" press="onMinusPress"/>
+					            <Button xmlns="sap.m" text="x" id="mult" press="onMultPress"/>
+					            <Button xmlns="sap.m" id="div" text="÷" press="onDivPress"/>
+					            <Button xmlns="sap.m" text="=" id="equals" press="onEqualsPress"/>
+					            <Button xmlns="sap.m" text="C" id="clear" press = "onClearPress"/>
+					        </items>
+					    </HBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
